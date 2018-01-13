@@ -1,5 +1,5 @@
 {
-  "name": "git-learning-2",
+  "name": "PORTFOLIO_3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,15 +25,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freefrogs/git-learning-2.git"
+    "url": "git+https://github.com/freefrogs/PORTFOLIO_3.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/freefrogs/git-learning-2/issues"
+    "url": "https://github.com/freefrogs/PORTFOLIO_3/issues"
   },
-  "homepage": "https://github.com/freefrogs/git-learning-2#readme",
+  "homepage": "https://github.com/freefrogs/PORTFOLIO_3#readme",
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.19.0",
