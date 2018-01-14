@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+$white: #fff; 				//header, section4,5
+$lightBlue: #bad3db; 		//header
+$darkGrey: #222626;			//section1,3
+$lightGrey: #959595;		//section1
+$pink: #f5989d;				//section2
+$purple: #615f7d;			//section2
+$lightGreen: #82ca9c;		//section2,5,6, footer
+$grey: #67676d;				//section3
+$greyAdress: #b8b8b8;		//section3,6
+$darkWhite: #f6f7fa;		//section6, footer
+$greyButton: #e1e1e1;		//section6
+$lightGreyBlue: #8297a7;	//section6
+$greyBlue: #2e3b4e;			//section6
+$greyIcon: #c5c5c5;			//section6
+$purpleButton: #bd8cbf;		//section6
+$darkGreyBlue: #192431;		//footer
+$greyBlueText: #57697f;		//footer
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: $white;
+	margin: 0;
+	padding: 0;
+}
