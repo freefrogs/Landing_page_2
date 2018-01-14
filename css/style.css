@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 66%;
+  margin: 0 auto; }
+
+.adress {
+  font-weight: 700;
+  font-size: 9px;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 110px;
+  padding: 0; }
+
+/* --GRID-- */
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+/*clearfix*/
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* --HEADER-- */
+header {
+  margin: 0 auto;
+  max-width: 1800px;
+  width: 100%;
+  background: url("../images/header.jpg") center 0/cover;
+  position: relative;
+  color: #fff; }
+  header .phone {
+    width: 38%;
+    position: absolute;
+    top: 29%;
+    right: 16%; }
+  header .adress {
+    top: 53%; }
+    header .adress span {
+      font-weight: 300;
+      color: #bad3db;
+      padding-right: 7px; }
+  header a {
+    width: 5.6%;
+    position: absolute;
+    top: 6%;
+    left: 17%; }
+    header a .logo {
+      width: 100%;
+      fit-object: cover; }
+      header a .logo:hover {
+        opacity: 0.7; }
+  header .container {
+    padding-top: 24%;
+    padding-bottom: 20%; }
+    header .container h1 {
+      font-size: 44px;
+      font-weight: 300;
+      margin: 0; }
+    header .container p {
+      font-size: 10px;
+      padding-right: 20%;
+      line-height: 2; }
+
+/*# sourceMappingURL=style.css.map */
