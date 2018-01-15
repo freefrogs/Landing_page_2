@@ -41,6 +41,7 @@ h1, h2, h3 {
 
 h1 {
 	font-size: 44px;
+	margin: 0;
 }
 
 h2 {
@@ -69,6 +70,23 @@ h4 {
 	position: absolute;
 	width: 110px;
 	padding: 0;
+}
+
+section a {
+	font-size: 10px;
+	color: $white;
+	text-decoration: none;
+	font-weight: 700;
+	display: inline-block;
+	transition: .5s ease;
+	padding: 6px;
+	border-radius: 3px;
+	span {
+		padding-left: 6px;
+	}
+	&:hover {
+		background: rgba(0,0,0,0.5);
+	}
 }
 
 [class^="col-"] {
@@ -102,7 +120,6 @@ h4 {
 header {
 	margin: 0 auto;
 	max-width: 1800px;
-	width: 100%;
 	background: url("../images/header.jpg") center 0/cover;
 	position: relative;
 	color: $white;
@@ -138,9 +155,6 @@ header {
 	.container {
 		padding-top: 24%;
 		padding-bottom: 20%;
-		h1 {
-			margin: 0;
-		}
 		p {
 			padding-right: 20%;
 		}
@@ -173,19 +187,7 @@ header {
 			margin: 0;
 		}
 		a {
-			font-size: 10px;
-			color: $white;
-			text-decoration: none;
-			font-weight: 700;
-			display: inline-block;
-			margin: 12px 0;
-			transition: .5s ease;
-			span {
-				padding-left: 6px;
-			}
-			&:hover {
-				opacity: 0.7;
-			}
+			margin: 6px 0;
 		}
 	}
 	.box-1 {
@@ -232,7 +234,7 @@ header {
 /* --SECTION 3-- */
 .section-3 {
 	position: relative;
-	margin: 5% 0;
+	margin: 5% 0 7%;
 	[class^="col-"] {
 		padding-right: 3%;
 	}
@@ -250,3 +252,21 @@ header {
 	}
 }
 
+/* --SECTION 4-- */
+.section-4 {
+	background: url("../images/section4_car.jpg") center 0/cover no-repeat;
+	color: $white;
+	.container {
+		padding: 24.5% 0 6.5%;
+		[class^="col-"] {
+			padding-right: 7%;
+			padding-left: 1%
+		}
+		h1{
+			line-height: 1.2;
+		}
+		p {
+			padding-right: 2%;
+		}
+	}
+}
