@@ -29,6 +29,26 @@ body {
 	padding: 0;
 }
 
+p {
+	line-height: 2;
+}
+
+h1, h2, h3 {
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 44px;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
 .container {
 	width: 66%;
 	margin: 0 auto;
@@ -42,6 +62,11 @@ body {
 	position: absolute;
 	width: 110px;
 	padding: 0;
+}
+
+[class^="col-"] {
+	float: left;
+	min-height: 1px;
 }
 
 /* --GRID-- */
@@ -106,14 +131,29 @@ header {
 		padding-top: 24%;
 		padding-bottom: 20%;
 		h1 {
-			font-size: 44px;
-			font-weight: 300;
 			margin: 0;
 		}
 		p {
 			font-size: 10px;
 			padding-right: 20%;
-			line-height: 2;
 		}
+	}
+}
+
+/* --SECTION 1--*/
+.section-1 {
+	padding: 4% 0;
+	.col-6 {
+		padding-right: 3%;
+		h2 {
+			color: $darkGrey;
+		}
+		p {
+			font-size: 10px;
+			color: $lightGrey;
+		}
+	}
+	.col-padding {
+		padding-top: 15.5%;
 	}
 }
