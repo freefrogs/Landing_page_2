@@ -43,13 +43,14 @@ h4 {
   width: 110px;
   padding: 0; }
 
-section a {
-  font-size: 10px;
+a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  display: inline-block;
-  transition: .5s ease;
+  transition: .5s ease; }
+
+section a {
+  font-size: 10px;
   padding: 6px;
   border-radius: 3px; }
   section a span {
@@ -228,6 +229,46 @@ header {
   .section-5 [class^="col-"] {
     padding-right: 3%; }
   .section-5 .adress {
-    padding-top: 4%; }
+    top: 19%; }
+
+/* --SECTION 6-- */
+.section-6 {
+  position: relative;
+  background: #f6f7fa;
+  padding-bottom: 2%; }
+  .section-6 .adress {
+    top: 23%;
+    color: #b8b8b8; }
+  .section-6 .container {
+    padding: 6% 1%; }
+    .section-6 .container [class^="col-"] {
+      padding: 4%; }
+    .section-6 .container .col-white {
+      background: #fff;
+      box-shadow: 0 0 50px #e1e1e1; }
+    .section-6 .container .grey-button, .section-6 .container .purple-button {
+      font-size: 8px;
+      padding: 3px 10px; }
+    .section-6 .container .grey-button {
+      background: #e1e1e1; }
+    .section-6 .container .purple-button {
+      background: #bd8cbf; }
+    .section-6 .container .green-button {
+      background: #82ca9c;
+      font-size: 10px;
+      padding: 10px 25px;
+      display: inline-block;
+      margin: 8px 0; }
+    .section-6 .container a:hover {
+      background: rgba(0, 0, 0, 0.5); }
+    .section-6 .container h3 {
+      margin: 10px 0 0;
+      color: #2e3b4e; }
+    .section-6 .container p {
+      padding-right: 12%;
+      color: #8297a7; }
+      .section-6 .container p i {
+        color: #c5c5c5;
+        padding-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */
