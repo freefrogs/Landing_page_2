@@ -270,3 +270,17 @@ header {
 		}
 	}
 }
+
+/* --SECTION 5-- */
+.section-5 {
+	position: relative;
+	padding: 4% 0 8%;
+	background: $lightGreen;
+	color: $white;
+	[class^="col-"] {
+		padding-right: 3%;
+	}
+	.adress {
+		padding-top: 4%;
+	}
+}

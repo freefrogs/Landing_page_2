@@ -219,4 +219,15 @@ header {
     .section-4 .container p {
       padding-right: 2%; }
 
+/* --SECTION 5-- */
+.section-5 {
+  position: relative;
+  padding: 4% 0 8%;
+  background: #82ca9c;
+  color: #fff; }
+  .section-5 [class^="col-"] {
+    padding-right: 3%; }
+  .section-5 .adress {
+    padding-top: 4%; }
+
 /*# sourceMappingURL=style.css.map */
