@@ -9,7 +9,8 @@ body {
   padding: 0; }
 
 p {
-  line-height: 2; }
+  line-height: 2;
+  font-size: 10px; }
 
 h1, h2, h3 {
   font-weight: 300; }
@@ -110,7 +111,8 @@ header {
     left: 17%; }
     header a .logo {
       width: 100%;
-      fit-object: cover; }
+      fit-object: cover;
+      transition: .5s ease; }
       header a .logo:hover {
         opacity: 0.7; }
   header .container {
@@ -119,7 +121,6 @@ header {
     header .container h1 {
       margin: 0; }
     header .container p {
-      font-size: 10px;
       padding-right: 20%; }
 
 /* --SECTION 1--*/
@@ -130,9 +131,56 @@ header {
     .section-1 .col-6 h2 {
       color: #222626; }
     .section-1 .col-6 p {
-      font-size: 10px;
       color: #959595; }
   .section-1 .col-padding {
     padding-top: 15.5%; }
+
+/* --SECTION 2--*/
+.section-2 {
+  color: #fff; }
+  .section-2 [class^="col-"] {
+    padding: 3.5%; }
+    .section-2 [class^="col-"] h3 {
+      margin: 0; }
+    .section-2 [class^="col-"] a {
+      font-size: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      margin: 12px 0;
+      transition: .5s ease; }
+      .section-2 [class^="col-"] a span {
+        padding-left: 6px; }
+      .section-2 [class^="col-"] a:hover {
+        opacity: 0.7; }
+  .section-2 .box-1 {
+    background: #f5989d; }
+  .section-2 .box-2 {
+    background: #615f7d; }
+  .section-2 .box-3 {
+    background: url("../images/gallery_small.jpg") center 0/cover no-repeat;
+    position: relative;
+    transition: .8s ease; }
+    .section-2 .box-3:hover {
+      background: url("../images/gallery_small_hover.jpg") center 0/cover no-repeat; }
+    .section-2 .box-3 i {
+      right: 10%; }
+  .section-2 .box-4 {
+    background: url("../images/gallery_large.jpg") center 0/cover no-repeat;
+    position: relative;
+    transition: 0.8s ease; }
+    .section-2 .box-4:hover {
+      background: url("../images/gallery_large_hover.jpg") center 0/cover no-repeat; }
+    .section-2 .box-4 p {
+      padding-right: 35%;
+      padding-bottom: 3.7%; }
+    .section-2 .box-4 i {
+      right: 5%; }
+  .section-2 .box-5 {
+    background: #82ca9c; }
+  .section-2 i {
+    position: absolute;
+    bottom: 15%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -31,6 +31,7 @@ body {
 
 p {
 	line-height: 2;
+	font-size: 10px;
 }
 
 h1, h2, h3 {
@@ -122,6 +123,7 @@ header {
 		.logo {
 			width: 100%;
 			fit-object: cover;
+			transition: .5s ease;
 			&:hover {
 				opacity: 0.7;
 			}
@@ -134,7 +136,6 @@ header {
 			margin: 0;
 		}
 		p {
-			font-size: 10px;
 			padding-right: 20%;
 		}
 	}
@@ -149,11 +150,76 @@ header {
 			color: $darkGrey;
 		}
 		p {
-			font-size: 10px;
 			color: $lightGrey;
 		}
 	}
 	.col-padding {
 		padding-top: 15.5%;
+	}
+}
+
+/* --SECTION 2--*/
+
+.section-2 {
+	color: $white;
+	[class^="col-"] {
+		padding: 3.5%;
+		h3 {
+			margin: 0;
+		}
+		a {
+			font-size: 10px;
+			color: $white;
+			text-decoration: none;
+			font-weight: 700;
+			display: inline-block;
+			margin: 12px 0;
+			transition: .5s ease;
+			span {
+				padding-left: 6px;
+			}
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+	.box-1 {
+		background: $pink;
+	}
+	.box-2 {
+		background: $purple;
+	}
+	.box-3 {
+		background: url("../images/gallery_small.jpg") center 0/cover no-repeat;
+		position: relative;
+		transition: .8s ease;
+		&:hover {
+			background: url("../images/gallery_small_hover.jpg") center 0/cover no-repeat;
+		}
+		i {
+			right: 10%;
+		}
+	}
+	.box-4 {
+		background: url("../images/gallery_large.jpg") center 0/cover no-repeat;
+		position: relative;
+		transition: 0.8s ease;
+		&:hover {
+			background: url("../images/gallery_large_hover.jpg") center 0/cover no-repeat;
+		}
+		p {
+			padding-right: 35%;
+			padding-bottom: 3.7%;
+		}
+		i {
+			right: 5%;
+		}
+	}
+	.box-5 {
+		background: $lightGreen;
+	}
+	i {
+		position: absolute;
+		bottom: 15%;
 	}
 }
