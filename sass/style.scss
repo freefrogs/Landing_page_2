@@ -185,6 +185,7 @@ header {
 	color: $white;
 	[class^="col-"] {
 		padding: 3.5%;
+		height: 200px;
 		h3 {
 			margin: 0;
 		}
@@ -218,7 +219,7 @@ header {
 		}
 		p {
 			padding-right: 35%;
-			padding-bottom: 3.7%;
+			padding-bottom: 4%;
 		}
 		i {
 			right: 5%;
@@ -335,6 +336,62 @@ header {
 			i {
 				color: $greyIcon;
 				padding-right: 10px;
+			}
+		}
+	}
+}
+
+/* --FOOTER-- */
+footer {
+	background: $darkGreyBlue;
+	color: $darkWhite;
+	.container {
+		padding: 6% 0;
+		.row-small {
+			padding: 6% 0 2%;
+			h4 {
+				padding-left: 1px;
+				padding-bottom: 7px;
+			}
+			ul {
+				list-style: none;
+				font-size: 10px;
+				padding: 0;
+				line-height: 1.8;
+			}
+		}
+		.col-footer {
+			padding-left: 10%;
+			input {
+				margin-top: 7px;
+				padding: 14px;
+				font-size: 12px;
+				width: 85%;
+				border: none;
+				border-radius: 2px 0 0 2px;
+			}
+			button {
+				outline: 0;
+				background: $lightGreen;
+				border: none;
+				width: 14%;
+				margin-left: -5px;
+				cursor: pointer;
+				transition: .5s ease;
+				border-radius: 0 2px 2px 0;
+				&:hover {
+					background: $grey;
+				}
+				i {
+					font-size: 12px;
+					color: $white;
+					padding: 14px;
+				}
+			}
+			p {
+				color: $greyBlueText;
+				font-size: 9px;
+				padding-right: 25%;
 			}
 		}
 	}

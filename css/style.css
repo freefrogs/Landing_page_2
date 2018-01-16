@@ -157,7 +157,8 @@ header {
 .section-2 {
   color: #fff; }
   .section-2 [class^="col-"] {
-    padding: 3.5%; }
+    padding: 3.5%;
+    height: 200px; }
     .section-2 [class^="col-"] h3 {
       margin: 0; }
     .section-2 [class^="col-"] a {
@@ -182,7 +183,7 @@ header {
       background: url("../images/gallery_large_hover.jpg") center 0/cover no-repeat; }
     .section-2 .box-4 p {
       padding-right: 35%;
-      padding-bottom: 3.7%; }
+      padding-bottom: 4%; }
     .section-2 .box-4 i {
       right: 5%; }
   .section-2 .box-5 {
@@ -270,5 +271,50 @@ header {
       .section-6 .container p i {
         color: #c5c5c5;
         padding-right: 10px; }
+
+/* --FOOTER-- */
+footer {
+  background: #192431;
+  color: #f6f7fa; }
+  footer .container {
+    padding: 6% 0; }
+    footer .container .row-small {
+      padding: 6% 0 2%; }
+      footer .container .row-small h4 {
+        padding-left: 1px;
+        padding-bottom: 7px; }
+      footer .container .row-small ul {
+        list-style: none;
+        font-size: 10px;
+        padding: 0;
+        line-height: 1.8; }
+    footer .container .col-footer {
+      padding-left: 10%; }
+      footer .container .col-footer input {
+        margin-top: 7px;
+        padding: 14px;
+        font-size: 12px;
+        width: 85%;
+        border: none;
+        border-radius: 2px 0 0 2px; }
+      footer .container .col-footer button {
+        outline: 0;
+        background: #82ca9c;
+        border: none;
+        width: 14%;
+        margin-left: -5px;
+        cursor: pointer;
+        transition: .5s ease;
+        border-radius: 0 2px 2px 0; }
+        footer .container .col-footer button:hover {
+          background: #67676d; }
+        footer .container .col-footer button i {
+          font-size: 12px;
+          color: #fff;
+          padding: 14px; }
+      footer .container .col-footer p {
+        color: #57697f;
+        font-size: 9px;
+        padding-right: 25%; }
 
 /*# sourceMappingURL=style.css.map */
