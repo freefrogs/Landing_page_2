@@ -33,15 +33,28 @@ h4 {
 .container {
   width: 66%;
   margin: 0 auto; }
+  @media (max-width: 992px) {
+    .container {
+      width: 80%; } }
 
 .adress {
   font-weight: 700;
   font-size: 9px;
   text-transform: uppercase;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   position: absolute;
   width: 110px;
   padding: 0; }
+  @media (max-width: 992px) {
+    .adress {
+      left: -1%; } }
+  @media (max-width: 768px) {
+    .adress {
+      left: -3%; } }
+  @media (max-width: 600px) {
+    .adress {
+      display: none; } }
 
 a {
   color: #fff;
@@ -99,6 +112,21 @@ section a {
 .col-12 {
   width: 100%; }
 
+@media (max-width: 992px) {
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-8 {
+    width: 66.66%; }
+
+  .col-m-12 {
+    width: 100%; } }
+@media (max-width: 768px) {
+  .col-s-12 {
+    width: 100%; }
+
+  .col-s-6 {
+    width: 50%; } }
 /*clearfix*/
 .row::before,
 .row::after {
@@ -118,6 +146,15 @@ header {
     position: absolute;
     top: 29%;
     right: 16%; }
+    @media (max-width: 992px) {
+      header .phone {
+        top: 32%; } }
+    @media (max-width: 768px) {
+      header .phone {
+        top: 35%; } }
+    @media (max-width: 726px) {
+      header .phone {
+        display: none; } }
   header .adress {
     top: 53%; }
     header .adress span {
@@ -129,9 +166,13 @@ header {
     position: absolute;
     top: 6%;
     left: 17%; }
+    @media (max-width: 992px) {
+      header a {
+        left: 10%; } }
     header a .logo {
       width: 100%;
-      fit-object: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       transition: .5s ease; }
       header a .logo:hover {
         opacity: 0.7; }
@@ -152,6 +193,12 @@ header {
       color: #959595; }
   .section-1 .col-padding {
     padding-top: 15.5%; }
+    @media (max-width: 992px) {
+      .section-1 .col-padding {
+        padding-top: 10%; } }
+    @media (max-width: 768px) {
+      .section-1 .col-padding {
+        padding-top: 0; } }
 
 /* --SECTION 2--*/
 .section-2 {
@@ -175,6 +222,9 @@ header {
       background: url("../images/gallery_small_hover.jpg") center 0/cover no-repeat; }
     .section-2 .box-3 i {
       right: 10%; }
+      @media (max-width: 768px) {
+        .section-2 .box-3 i {
+          right: 5%; } }
   .section-2 .box-4 {
     background: url("../images/gallery_large.jpg") center 0/cover no-repeat;
     position: relative;
@@ -198,6 +248,9 @@ header {
   margin: 5% 0 7%; }
   .section-3 [class^="col-"] {
     padding-right: 3%; }
+    @media (max-width: 768px) {
+      .section-3 [class^="col-"] {
+        padding-right: 0; } }
   .section-3 .adress {
     color: #b8b8b8; }
   .section-3 h2 {
@@ -213,6 +266,9 @@ header {
   color: #fff; }
   .section-4 .container {
     padding: 24.5% 0 6.5%; }
+    @media (max-width: 992px) {
+      .section-4 .container {
+        padding-top: 10%; } }
     .section-4 .container [class^="col-"] {
       padding-right: 7%;
       padding-left: 1%; }
@@ -229,6 +285,9 @@ header {
   color: #fff; }
   .section-5 [class^="col-"] {
     padding-right: 3%; }
+    @media (max-width: 768px) {
+      .section-5 [class^="col-"] {
+        padding-right: 0; } }
   .section-5 .adress {
     top: 19%; }
 
@@ -280,6 +339,9 @@ footer {
     padding: 6% 0; }
     footer .container .row-small {
       padding: 6% 0 2%; }
+      @media (max-width: 992px) {
+        footer .container .row-small {
+          padding: 0; } }
       footer .container .row-small h4 {
         padding-left: 1px;
         padding-bottom: 7px; }
@@ -290,6 +352,9 @@ footer {
         line-height: 1.8; }
     footer .container .col-footer {
       padding-left: 10%; }
+      @media (max-width: 992px) {
+        footer .container .col-footer {
+          padding-left: 0; } }
       footer .container .col-footer input {
         margin-top: 7px;
         padding: 14px;
@@ -298,6 +363,7 @@ footer {
         border: none;
         border-radius: 2px 0 0 2px; }
       footer .container .col-footer button {
+        text-align: center;
         outline: 0;
         background: #82ca9c;
         border: none;
@@ -311,7 +377,7 @@ footer {
         footer .container .col-footer button i {
           font-size: 12px;
           color: #fff;
-          padding: 14px; }
+          padding: 14px 0; }
       footer .container .col-footer p {
         color: #57697f;
         font-size: 9px;

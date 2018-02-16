@@ -60,6 +60,9 @@ h4 {
 .container {
 	width: 66%;
 	margin: 0 auto;
+	@media (max-width: 992px) {
+		width: 80%;
+	}
 }
 
 .adress {
@@ -70,6 +73,15 @@ h4 {
 	position: absolute;
 	width: 110px;
 	padding: 0;
+	@media (max-width: 992px) {
+		left: -1%;
+	}
+	@media (max-width: 768px) {
+		left: -3%;
+	}
+	@media (max-width: 600px) {
+			display: none;
+	}
 }
 
 a {
@@ -110,6 +122,17 @@ section a {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+@media (max-width: 992px) {
+	.col-m-6 {width: 50%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-12 {width: 100%;}
+}
+
+@media (max-width: 768px) {
+	.col-s-12 {width: 100%;}
+	.col-s-6 {width: 50%;}
+}
+
 /*clearfix*/
 .row::before,
 .row::after {
@@ -130,6 +153,15 @@ header {
 		position: absolute;
 		top: 29%;
 		right: 16%;
+		@media (max-width: 992px) {
+			top: 32%;
+		}
+		@media (max-width: 768px) {
+			top: 35%;
+		}
+		@media (max-width: 726px) {
+			display: none;
+		}
 	}
 	.adress {
 		top: 53%;
@@ -145,9 +177,12 @@ header {
 		position: absolute;
 		top: 6%;
 		left: 17%;
+		@media (max-width: 992px) {
+			left: 10%;
+		}
 		.logo {
 			width: 100%;
-			fit-object: cover;
+			object-fit: cover;
 			transition: .5s ease;
 			&:hover {
 				opacity: 0.7;
@@ -177,6 +212,12 @@ header {
 	}
 	.col-padding {
 		padding-top: 15.5%;
+		@media (max-width: 992px) {
+			padding-top: 10%;
+		}
+		@media (max-width: 768px) {
+			padding-top: 0;
+		}
 	}
 }
 
@@ -208,6 +249,9 @@ header {
 		}
 		i {
 			right: 10%;
+			@media (max-width: 768px) {
+				right: 5%;
+			}
 		}
 	}
 	.box-4 {
@@ -240,6 +284,9 @@ header {
 	margin: 5% 0 7%;
 	[class^="col-"] {
 		padding-right: 3%;
+		@media (max-width: 768px) {
+		padding-right: 0;
+	}
 	}
 	.adress {
 		color: $greyAdress;
@@ -261,6 +308,9 @@ header {
 	color: $white;
 	.container {
 		padding: 24.5% 0 6.5%;
+		@media (max-width: 992px) {
+			padding-top: 10%;
+		}
 		[class^="col-"] {
 			padding-right: 7%;
 			padding-left: 1%
@@ -282,6 +332,9 @@ header {
 	color: $white;
 	[class^="col-"] {
 		padding-right: 3%;
+		@media (max-width: 768px) {
+			padding-right: 0;
+		}
 	}
 	.adress {
 		top: 19%;
@@ -349,6 +402,9 @@ footer {
 		padding: 6% 0;
 		.row-small {
 			padding: 6% 0 2%;
+			@media (max-width: 992px) {
+				padding: 0;
+			}
 			h4 {
 				padding-left: 1px;
 				padding-bottom: 7px;
@@ -362,6 +418,9 @@ footer {
 		}
 		.col-footer {
 			padding-left: 10%;
+			@media (max-width: 992px) {
+				padding-left: 0;
+			}
 			input {
 				margin-top: 7px;
 				padding: 14px;
@@ -371,6 +430,7 @@ footer {
 				border-radius: 2px 0 0 2px;
 			}
 			button {
+				text-align: center;
 				outline: 0;
 				background: $lightGreen;
 				border: none;
@@ -385,7 +445,7 @@ footer {
 				i {
 					font-size: 12px;
 					color: $white;
-					padding: 14px;
+					padding: 14px 0;
 				}
 			}
 			p {
